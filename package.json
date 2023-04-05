@@ -4,12 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js",
+    "watch": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -24,15 +22,14 @@
     "mysql2": "^3.1.2",
     "nodemon": "^2.0.20",
     "sequelize": "^6.29.0",
-    "serve": "^14.2.0",
-    "react-scripts": "4.0.3"
+    "react-scripts" : "^4.0.3"
   },
   "devDependencies": {
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.1.2"
   },
-  "engines": {
-    "node": "16.13.0"
-  }
+  "engines": { 
+    "node": "16.13.0" 
+ }
 }
